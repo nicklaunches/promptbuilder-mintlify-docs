@@ -25,38 +25,49 @@
         },
         "tabs": [
             {
-                "tab": "Guides",
+                "tab": "Documentation",
                 "groups": [
                     {
                         "group": "Getting started",
                         "pages": [
                             "index",
                             "quickstart",
-                            "development"
+                            "roadmap"
                         ]
                     },
                     {
-                        "group": "Customization",
+                        "group": "Features",
                         "pages": [
-                            "essentials/settings",
-                            "essentials/navigation"
+                            "features/prompt-generator",
+                            "features/prompt-optimizer",
+                            "features/prompt-library",
+                            "features/prompt-assistant",
+                            "features/smm-bot"
                         ]
                     },
                     {
-                        "group": "Writing content",
+                        "group": "Use Cases",
                         "pages": [
-                            "essentials/markdown",
-                            "essentials/code",
-                            "essentials/images",
-                            "essentials/reusable-snippets"
+                            "use-cases/for-individuals"
                         ]
                     },
                     {
-                        "group": "AI tools",
+                        "group": "Miscellaneous",
                         "pages": [
-                            "ai-tools/cursor",
-                            "ai-tools/claude-code",
-                            "ai-tools/windsurf"
+                            "contact us",
+                            "FAQ",
+                            "troubleshooting"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Changelog",
+                "groups": [
+                    {
+                        "group": "Changelog",
+                        "pages": [
+                            "changelog"
                         ]
                     }
                 ]

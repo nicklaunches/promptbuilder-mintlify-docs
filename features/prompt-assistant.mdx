@@ -4,6 +4,92 @@ description: "Chat-first help for drafting and improving prompts"
 icon: 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M12%206V2H8m7%209v2M2%2012h2m16%200h2m-2%204a2%202%200%200%201-2%202H8.828a2%202%200%200%200-1.414.586l-2.202%202.202A.71.71%200%200%201%204%2020.286V8a2%202%200%200%201%202-2h12a2%202%200%200%201%202%202zM9%2011v2%22%2F%3E%3C%2Fsvg%3E'
 ---
 
-## Coming soon
+Prompt Assistant is a chat-first workspace for running and iterating on prompts you created in Prompt Builder.
 
-This page will cover Assistant chats, templates, and moving results into your Library.
+Instead of opening ChatGPT separately, you can take a prompt from Generator/Optimizer/My Prompts and try it directly here with a fast assistant model (for example **GPT‑4.1 Nano**).
+
+## What it’s for
+
+- Run a generated/optimized prompt and see what it produces
+- Iterate on wording, tone, constraints, and output format
+- Save the best version back to **My Prompts**
+
+## What it’s not for
+
+Prompt Assistant isn’t intended for completely unrelated/general chat. If you want help, share the prompt you’re testing (or your goal) and the output format you want.
+
+## Choose a model
+
+Select the assistant model you want to run the prompt with. If you’re unsure, start with the default and switch models only when you want a different style or speed.
+
+## How it works
+
+<Steps>
+  <Step title="Start with a prompt">
+    Paste a prompt, or insert one from **My Prompts**.
+
+    Common sources:
+    - Prompt Generator output
+    - Prompt Optimizer output (via **Run**)
+    - A saved prompt from Prompt Library
+  </Step>
+
+  <Step title="Pick an assistant model">
+    Choose which model should run the prompt (default model is configured in the app).
+  </Step>
+
+  <Step title="Run + iterate">
+    Send the prompt and evaluate the response. Iterate with follow-ups like:
+    - “Keep the same structure, but make it shorter”
+    - “Return output as JSON with keys …”
+    - “Ask clarifying questions first”
+    - “Add 3 examples and 3 edge cases”
+  </Step>
+
+  <Step title="Save to My Prompts">
+    Use **Save** to store the exact version you want in **My Prompts** so you can reuse it later.
+  </Step>
+</Steps>
+
+## Core concepts
+
+<AccordionGroup>
+  <Accordion title="Generator vs Optimizer (when to use which)">
+    - **Prompt Generator**: start from a rough idea and generate a first draft prompt, then refine it in chat.
+    - **Prompt Optimizer**: start from an existing prompt and upgrade it into a clearer, better-structured version (with history).
+
+    Use Assistant anytime you want to iterate on wording, tone, constraints, or format—regardless of where the prompt came from.
+  </Accordion>
+  <Accordion title="Assistant model">
+    The model selector controls which assistant runs your prompt.
+  </Accordion>
+  <Accordion title="Insert prompts from My Prompts">
+    Use **My Prompts** in the composer to insert a saved prompt and continue iterating.
+  </Accordion>
+  <Accordion title="Pin important work">
+    Use **Pin** to keep key prompts and conversations easy to find.
+  </Accordion>
+  <Accordion title="From Optimizer to Assistant">
+    Using **Run** in Prompt Optimizer opens a new Assistant chat seeded with the optimized prompt.
+  </Accordion>
+</AccordionGroup>
+
+## Tips for better chats
+
+- Tell the assistant what success looks like (format, length, constraints).
+- Include examples of “good” vs “bad” outputs if you have them.
+- If you want the assistant to ask questions first, say so explicitly.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Prompt Library" href="/features/prompt-library">
+    Save, pin, and run prompts you refine in Assistant.
+  </Card>
+  <Card title="Prompt Generator" href="/features/prompt-generator">
+    Start from an idea and refine it with chat.
+  </Card>
+  <Card title="Prompt Optimizer" href="/features/prompt-optimizer">
+    Upgrade an existing prompt and then run it in Assistant.
+  </Card>
+</CardGroup>

@@ -4,6 +4,72 @@ description: "Refine prompts for clarity, structure, and better outputs"
 icon: 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22m21.64%203.64l-1.28-1.28a1.21%201.21%200%200%200-1.72%200L2.36%2018.64a1.21%201.21%200%200%200%200%201.72l1.28%201.28a1.2%201.2%200%200%200%201.72%200L21.64%205.36a1.2%201.2%200%200%200%200-1.72M14%207l3%203M5%206v4m14%204v4M10%202v2M7%208H3m18%208h-4M11%203H9%22%2F%3E%3C%2Fsvg%3E'
 ---
 
-## Coming soon
+Prompt Optimizer upgrades an existing prompt into a clearer, more structured version and saves a history of improvements.
 
-This page will cover how to optimize prompts, compare changes, and run the improved version.
+## When to use it
+
+Use Prompt Optimizer when you already have a prompt and want to:
+
+- Improve clarity and structure
+- Add constraints and acceptance criteria
+- Make the output format explicit (JSON, table, checklist)
+- Create a stronger “system prompt” style instruction set
+
+## How it works
+
+<AccordionGroup>
+  <Accordion title="Input + model selection">
+    - Paste your prompt, or choose one from **My Prompts** to auto-fill.
+    - Select the **optimizer model** (the assistant that performs the rewrite).
+  </Accordion>
+  <Accordion title="History">
+    Each optimization is saved automatically to History with:
+    - Original prompt
+    - Optimized prompt
+    - Timestamp
+
+    Pinned items stay at the top.
+  </Accordion>
+  <Accordion title="Run in Assistant">
+    Use **Run** on a history card to open a **new** Assistant chat seeded with the optimized prompt.
+  </Accordion>
+</AccordionGroup>
+
+## Optimize a prompt
+
+<Steps>
+  <Step title="Start with a solid base prompt">
+    If your prompt is vague, add:
+    - Who the model should act as (role)
+    - The context and constraints
+    - The expected output format
+  </Step>
+
+  <Step title="Choose an optimizer model">
+    Pick the model you want to use to perform the rewrite.
+  </Step>
+
+  <Step title="Click Optimize">
+    Prompt Builder generates an improved version and saves it to History automatically.
+  </Step>
+</Steps>
+
+## Tips for best results
+
+- Prefer concrete inputs: include examples, edge cases, and “don’t do” constraints.
+- If you need a strict format, say so (and include a schema).
+- Use short follow-up optimizations instead of one massive prompt rewrite.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Prompt Generator" href="/features/prompt-generator">
+    Start from an idea and refine it in chat.
+  </Card>
+  <Card title="Prompt Library" href="/features/prompt-library">
+    Save and organize optimized prompts for reuse.
+  </Card>
+  <Card title="Prompt Assistant" href="/features/prompt-assistant">
+    Iterate on an optimized prompt in a dedicated chat.
+  </Card>
+</CardGroup>

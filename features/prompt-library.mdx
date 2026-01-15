@@ -4,6 +4,77 @@ description: "Organize, reuse, and manage your saved prompts"
 icon: 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M12%207v14m-9-3a1%201%200%200%201-1-1V4a1%201%200%200%201%201-1h5a4%204%200%200%201%204%204a4%204%200%200%201%204-4h5a1%201%200%200%201%201%201v13a1%201%200%200%201-1%201h-6a3%203%200%200%200-3%203a3%203%200%200%200-3-3z%22%2F%3E%3C%2Fsvg%3E'
 ---
 
-## Coming soon
+Prompt Library is where you store, organize, and reuse prompts you’ve created across Prompt Builder.
 
-This page will cover My Prompts, favorites/pins, and how to run prompts from your library.
+It includes two tabs:
+
+- **My Prompts**: your saved prompts (from Generator / Assistant / Optimizer / SMM Bot)
+- **Community Prompts**: curated prompts shared by others (optional; can be copied into My Prompts)
+
+## Find prompts fast
+
+Use search and filters to narrow down results:
+
+- Search by title, description, or prompt text
+- Filter by categories (multi-select)
+- Filter by target models (multi-select)
+
+## My Prompts
+
+My Prompts is your personal prompt workspace.
+
+<AccordionGroup>
+  <Accordion title="Pin / unpin">
+    Pin your best prompts so they stay at the top of the list.
+  </Accordion>
+  <Accordion title="Edit">
+    Update the title and prompt content when you improve a template.
+  </Accordion>
+  <Accordion title="Delete">
+    Remove prompts you no longer need (recommended: confirm before deleting).
+  </Accordion>
+  <Accordion title="Run">
+    Start a **new** Assistant chat seeded with the prompt.
+  </Accordion>
+</AccordionGroup>
+
+## Community Prompts
+
+Browse prompts from the community and optionally **Add to Library** to copy them into My Prompts for customization.
+
+<Tip>
+  A great workflow is: add a community prompt → adapt it to your needs → save your edited version to My Prompts.
+</Tip>
+
+## Recommended workflow
+
+<Steps>
+  <Step title="Create or import">
+    Start from:
+    - Prompt Generator (idea → first draft)
+    - Prompt Optimizer (rewrite an existing prompt)
+    - Community Prompts (copy a template)
+  </Step>
+
+  <Step title="Refine">
+    Iterate in Prompt Assistant until the prompt reliably produces the result you want.
+  </Step>
+
+  <Step title="Save + pin">
+    Save the final prompt to My Prompts and pin it if it’s a frequent workflow.
+  </Step>
+</Steps>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Prompt Assistant" href="/features/prompt-assistant">
+    Use chat to refine prompts and save the best versions.
+  </Card>
+  <Card title="Prompt Generator" href="/features/prompt-generator">
+    Start from an idea and iterate quickly.
+  </Card>
+  <Card title="Prompt Optimizer" href="/features/prompt-optimizer">
+    Upgrade an existing prompt and keep a version history.
+  </Card>
+</CardGroup>

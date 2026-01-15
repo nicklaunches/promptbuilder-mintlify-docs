@@ -4,6 +4,79 @@ description: "Turn ideas into production-ready prompts"
 icon: 'data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22m10.852%2014.772l-.383.923m.383-6.467l-.383-.923m2.679%206.467l.382.924m.001-7.391l-.383.923m1.624%201.624l.923-.383m-.923%202.679l.923.383M17.598%206.5A3%203%200%201%200%2012%205a3%203%200%200%200-5.63-1.446a3%203%200%200%200-.368%201.571a4%204%200%200%200-2.525%205.771%22%2F%3E%3Cpath%20d%3D%22M17.998%205.125a4%204%200%200%201%202.525%205.771%22%2F%3E%3Cpath%20d%3D%22M19.505%2010.294a4%204%200%200%201-1.5%207.706%22%2F%3E%3Cpath%20d%3D%22M4.032%2017.483A4%204%200%200%200%2011.464%2020c.18-.311.892-.311%201.072%200a4%204%200%200%200%207.432-2.516%22%2F%3E%3Cpath%20d%3D%22M4.5%2010.291A4%204%200%200%200%206%2018m.002-12.875a3%203%200%200%200%20.4%201.375m2.826%204.352l-.923-.383m.923%202.679l-.923.383%22%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%223%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E'
 ---
 
-## Coming soon
+Prompt Generator is a two-pane workspace:
 
-This page will cover how to generate prompts, choose models, and save results to your Library.
+- Left: describe your goal (“idea”) and choose a target model
+- Right: iterate in chat, then save the version you want to your Library
+
+## Core concepts
+
+<AccordionGroup>
+  <Accordion title="Target model vs chat model">
+    - **Target model**: the model the prompt is optimized for (e.g. GPT, Claude, Gemini).
+    - **Chat model**: the assistant you use to iterate on the prompt inside the chat.
+
+    You can optimize for one model and iterate with another.
+  </Accordion>
+  <Accordion title="Chats">
+    Each time you generate, Prompt Builder creates a new chat thread so you can revisit iterations later.
+  </Accordion>
+  <Accordion title="Library">
+    Use **Save** to store the exact version you want in **My Prompts**, so you can reuse it later (and run it in Assistant).
+  </Accordion>
+</AccordionGroup>
+
+## Generate a prompt
+
+<Steps>
+  <Step title="Describe the outcome">
+    Write what you want to accomplish. Include:
+    - Audience / role
+    - Context / constraints
+    - Desired output format
+
+    <Tip>
+      If you know the output format, state it explicitly: “Return JSON with keys …” or “Return a table with columns …”.
+    </Tip>
+  </Step>
+
+  <Step title="Choose a target model">
+    Pick the model you want the prompt optimized for.
+  </Step>
+
+  <Step title="Click Generate">
+    Prompt Builder creates a new chat thread and posts the first prompt version into the chat.
+  </Step>
+</Steps>
+
+## Refine in chat
+
+Use the chat on the right to iterate quickly. Good refinement prompts include:
+
+- “Make it shorter and more direct”
+- “Add step-by-step instructions and acceptance criteria”
+- “Ask clarifying questions before answering”
+- “Add 3 examples and 3 edge cases”
+- “Rewrite for a different tone: friendly, formal, terse”
+
+<Note>
+  When you like a version, click **Save** to add it to your Library.
+</Note>
+
+## Reuse saved prompts
+
+You can insert an existing prompt from **My Prompts** into the composer and keep iterating (no need to start from a fresh idea).
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Prompt Optimizer" href="/features/prompt-optimizer">
+    Improve an existing prompt and keep a history of versions.
+  </Card>
+  <Card title="Prompt Library" href="/features/prompt-library">
+    Organize saved prompts and run them in Assistant.
+  </Card>
+  <Card title="Prompt Assistant" href="/features/prompt-assistant">
+    Chat-first help for drafting, adapting, and refining prompts.
+  </Card>
+</CardGroup>

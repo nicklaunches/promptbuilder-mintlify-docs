@@ -48,7 +48,17 @@
                     {
                         "group": "Use Cases",
                         "pages": [
-                            "use-cases/for-individuals"
+                            "use-cases/for-individuals",
+                            "use-cases/for-business",
+                            "use-cases/for-marketers",
+                            "use-cases/for-content-creation",
+                            "use-cases/for-development",
+                            "use-cases/for-academic-research",
+                            "use-cases/for-professional-services",
+                            "use-cases/for-productivity",
+                            "use-cases/for-agencies",
+                            "use-cases/for-content-creators",
+                            "use-cases/for-saas-founders"
                         ]
                     },
                     {

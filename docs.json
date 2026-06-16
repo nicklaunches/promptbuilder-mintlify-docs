@@ -41,8 +41,7 @@
                             "features/prompt-generator",
                             "features/prompt-optimizer",
                             "features/prompt-library",
-                            "features/prompt-assistant",
-                            "features/smm-bot"
+                            "features/prompt-tester"
                         ]
                     },
                     {

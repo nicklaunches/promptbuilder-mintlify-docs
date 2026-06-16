@@ -1,11 +1,11 @@
 ---
-title: "Prompt Assistant"
-description: "Chat-first help for drafting and improving prompts"
+title: "Prompt Tester"
+description: "Chat-first workspace for running and testing your prompts"
 ---
 
-Prompt Assistant is a chat-first workspace for running and iterating on prompts you created in Prompt Builder.
+Prompt Tester is a chat-first workspace for running and iterating on prompts you created in Prompt Builder.
 
-Instead of opening ChatGPT separately, you can take a prompt from Generator/Optimizer/My Prompts and try it directly here with a fast assistant model (for example **GPT‑4.1 Nano**).
+Instead of opening ChatGPT separately, you can take a prompt from Generator/Optimizer/My Prompts and try it directly here with a fast tester model (for example **GPT‑4.1 Nano**).
 
 ## What it’s for
 
@@ -15,11 +15,11 @@ Instead of opening ChatGPT separately, you can take a prompt from Generator/Opti
 
 ## What it’s not for
 
-Prompt Assistant isn’t intended for completely unrelated/general chat. If you want help, share the prompt you’re testing (or your goal) and the output format you want.
+Prompt Tester isn’t intended for completely unrelated/general chat. If you want help, share the prompt you’re testing (or your goal) and the output format you want.
 
 ## Choose a model
 
-Select the assistant model you want to run the prompt with. If you’re unsure, start with the default and switch models only when you want a different style or speed.
+Select the tester model you want to run the prompt with. If you’re unsure, start with the default and switch models only when you want a different style or speed.
 
 ## How it works
 
@@ -33,7 +33,7 @@ Select the assistant model you want to run the prompt with. If you’re unsure, 
     - A saved prompt from Prompt Library
   </Step>
 
-  <Step title="Pick an assistant model">
+  <Step title="Pick a tester model">
     Choose which model should run the prompt (default model is configured in the app).
   </Step>
 
@@ -57,10 +57,10 @@ Select the assistant model you want to run the prompt with. If you’re unsure, 
     - **Prompt Generator**: start from a rough idea and generate a first draft prompt, then refine it in chat.
     - **Prompt Optimizer**: start from an existing prompt and upgrade it into a clearer, better-structured version (with history).
 
-    Use Assistant anytime you want to iterate on wording, tone, constraints, or format—regardless of where the prompt came from.
+    Use Tester anytime you want to iterate on wording, tone, constraints, or format—regardless of where the prompt came from.
   </Accordion>
-  <Accordion title="Assistant model">
-    The model selector controls which assistant runs your prompt.
+  <Accordion title="Tester model">
+    The model selector controls which tester model runs your prompt.
   </Accordion>
   <Accordion title="Insert prompts from My Prompts">
     Use **My Prompts** in the composer to insert a saved prompt and continue iterating.
@@ -68,27 +68,27 @@ Select the assistant model you want to run the prompt with. If you’re unsure, 
   <Accordion title="Pin important work">
     Use **Pin** to keep key prompts and conversations easy to find.
   </Accordion>
-  <Accordion title="From Optimizer to Assistant">
-    Using **Run** in Prompt Optimizer opens a new Assistant chat seeded with the optimized prompt.
+  <Accordion title="From Optimizer to Tester">
+    Using **Run** in Prompt Optimizer opens a new Tester chat seeded with the optimized prompt.
   </Accordion>
 </AccordionGroup>
 
 ## Tips for better chats
 
-- Tell the assistant what success looks like (format, length, constraints).
+- Tell the model what success looks like (format, length, constraints).
 - Include examples of “good” vs “bad” outputs if you have them.
-- If you want the assistant to ask questions first, say so explicitly.
+- If you want the model to ask questions first, say so explicitly.
 
 ## Next steps
 
 <CardGroup cols={2}>
   <Card title="Prompt Library" href="/features/prompt-library">
-    Save, pin, and run prompts you refine in Assistant.
+    Save, pin, and run prompts you refine in Tester.
   </Card>
   <Card title="Prompt Generator" href="/features/prompt-generator">
     Start from an idea and refine it with chat.
   </Card>
   <Card title="Prompt Optimizer" href="/features/prompt-optimizer">
-    Upgrade an existing prompt and then run it in Assistant.
+    Upgrade an existing prompt and then run it in Tester.
   </Card>
 </CardGroup>

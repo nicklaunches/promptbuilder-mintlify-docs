@@ -1,0 +1,83 @@
+---
+title: "Instructions"
+description: "Standing rules that are woven into every prompt"
+---
+
+Instructions are standing directives that Prompt Builder weaves into your prompts automatically. Set them once — "Be concise", "Don't sound like AI", "Always answer first" — and they apply every time you generate or optimize, without retyping.
+
+## Where they apply
+
+Enabled instructions travel with your work in the **Generator**, the **Optimizer**, and the **Tester**. In the composer you'll see an **Instructions** button with a badge showing how many are currently active.
+
+## What an instruction looks like
+
+Each instruction has:
+
+- **Title** — a short name (required), e.g. "Answer first"
+- **Detail** — the rule itself (up to 1,000 characters), e.g. "Lead with the answer or bottom line, then add supporting detail."
+- **Enabled** — a toggle. Only enabled instructions are applied, and the toggle state syncs everywhere.
+
+## Manage instructions
+
+Open **Instructions** from the sidebar to manage them all on one page:
+
+<AccordionGroup>
+  <Accordion title="Create">
+    Click **New instruction**, give it a title and detail, and choose whether it's enabled by default.
+  </Accordion>
+  <Accordion title="Edit">
+    Edit any instruction inline to refine its wording.
+  </Accordion>
+  <Accordion title="Toggle">
+    Turn instructions on or off. The badge count and every composer reflect the change immediately.
+  </Accordion>
+  <Accordion title="Search">
+    Filter your instructions by title or detail.
+  </Accordion>
+  <Accordion title="Delete">
+    Remove instructions you no longer need.
+  </Accordion>
+</AccordionGroup>
+
+You can also manage instructions without leaving the composer: the **Instructions** button opens a quick panel to toggle or create them, with a **Manage all** link to the full page.
+
+## Start from a preset
+
+New to Instructions? The page offers ready-made presets you can use as-is or tweak, including:
+
+- **No em-dashes** — avoid em-dashes; use periods or commas instead
+- **Don't sound like AI** — skip formal transitions, hedging, and buzzwords
+- **Answer first** — lead with the answer or bottom line
+- **Skip the flattery** — be direct and concise
+- **My company** / **My role** — give the model standing context about you
+
+## How to use it
+
+<Steps>
+  <Step title="Open Instructions">
+    Go to **Instructions** in the sidebar, or click the **Instructions** button in the composer.
+  </Step>
+
+  <Step title="Add a rule">
+    Pick a preset or create your own with a clear title and detail. Keep each rule focused on one behavior.
+  </Step>
+
+  <Step title="Generate as usual">
+    Head to the Generator or Optimizer. Your enabled instructions are applied automatically — the badge shows how many are active.
+  </Step>
+</Steps>
+
+<Tip>
+  Keep instructions short and single-purpose. Several small rules ("Answer first", "No em-dashes") are easier to toggle than one long paragraph.
+</Tip>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Prompt Generator" href="/features/prompt-generator">
+    See your instructions applied as you generate.
+  </Card>
+  <Card title="Prompt Optimizer" href="/features/prompt-optimizer">
+    Apply standing rules to every optimization.
+  </Card>
+</CardGroup>

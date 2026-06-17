@@ -1,9 +1,11 @@
 ---
 title: "Prompt Optimizer"
-description: "Refine prompts for clarity, structure, and better outputs"
+description: "Paste a prompt, answer a few questions, get a stronger one"
 ---
 
-Prompt Optimizer upgrades an existing prompt into a clearer, more structured version and saves a history of improvements.
+Prompt Optimizer takes a prompt you already use, analyzes it, asks up to three quick questions, and rebuilds it stronger.
+
+> Paste a prompt you already use. Prompt Builder will analyze it, ask up to three quick questions, and rebuild it stronger.
 
 ## When to use it
 
@@ -12,63 +14,71 @@ Use Prompt Optimizer when you already have a prompt and want to:
 - Improve clarity and structure
 - Add constraints and acceptance criteria
 - Make the output format explicit (JSON, table, checklist)
-- Create a stronger “system prompt” style instruction set
+- Turn a loose ask into a stronger, reusable instruction set
 
-## How it works
+## The composer
 
-<AccordionGroup>
-  <Accordion title="Input + model selection">
-    - Paste your prompt, or choose one from **My Prompts** to auto-fill.
-    - Select the **optimizer model** (the assistant that performs the rewrite).
-  </Accordion>
-  <Accordion title="History">
-    Each optimization is saved automatically to History with:
-    - Original prompt
-    - Optimized prompt
-    - Timestamp
+Optimizer uses the same composer as the Generator:
 
-    Pinned items stay at the top.
-  </Accordion>
-  <Accordion title="Run in Tester">
-    Use **Run** on a history card to open a **new** Tester chat seeded with the optimized prompt.
-  </Accordion>
-</AccordionGroup>
+- **Prompt type** — defaults to **Auto**; Prompt Builder resolves the right type from the prompt you paste.
+- **Model** — the target model for the rewrite. Defaults to **Universal**.
+- **Voice**, **Attach**, and **Instructions** — dictate, add context files, and apply your standing rules. See [Instructions](/features/instructions).
+- **Optimize** — analyze and rebuild the prompt.
 
-## Optimize a prompt
+## How optimization works
 
 <Steps>
-  <Step title="Start with a solid base prompt">
-    If your prompt is vague, add:
-    - Who the model should act as (role)
-    - The context and constraints
-    - The expected output format
+  <Step title="Paste your prompt">
+    Drop in the prompt you want to improve (or insert one from your [Library](/features/prompt-library)). Set a prompt type and model, or leave them on Auto / Universal.
   </Step>
 
-  <Step title="Choose an optimizer model">
-    Pick the model you want to use to perform the rewrite.
+  <Step title="Answer a few quick questions">
+    Prompt Builder analyzes the prompt and may ask **up to three quick questions** to fill in missing context (audience, format, constraints). Pick from the suggested answers or add your own, then continue.
   </Step>
 
-  <Step title="Click Optimize">
-    Prompt Builder generates an improved version and saves it to History automatically.
+  <Step title="Get the rebuilt prompt">
+    Prompt Builder rewrites the prompt and opens it in the prompt view, ready to copy, refine, or save.
   </Step>
 </Steps>
 
+<Note>
+  The optimized prompt is written in the same language as the prompt you paste.
+</Note>
+
+## After you optimize — what's next?
+
+The rebuilt prompt opens in the same prompt view as the Generator, with the same next steps:
+
+<CardGroup cols={2}>
+  <Card title="Create follow up prompt">
+    Spin up a related prompt seeded from this one.
+  </Card>
+  <Card title="Improve your prompt">
+    Answer a few questions to sharpen the prompt even further.
+  </Card>
+</CardGroup>
+
+From there you can copy the prompt, keep refining, or **Save** it to your Library. Each optimization is kept in your recent history so you can revisit earlier versions.
+
 ## Tips for best results
 
-- Prefer concrete inputs: include examples, edge cases, and “don’t do” constraints.
+- Prefer concrete inputs: include examples, edge cases, and "don't do" constraints.
 - If you need a strict format, say so (and include a schema).
-- Use short follow-up optimizations instead of one massive prompt rewrite.
+- Use short follow-up optimizations instead of one massive rewrite.
 
 ## Next steps
 
 <CardGroup cols={2}>
   <Card title="Prompt Generator" href="/features/prompt-generator">
-    Start from an idea and refine it in chat.
+    Start from an idea instead of an existing prompt.
   </Card>
   <Card title="Prompt Library" href="/features/prompt-library">
     Save and organize optimized prompts for reuse.
   </Card>
+  <Card title="Instructions" href="/features/instructions">
+    Apply standing rules to every optimization.
+  </Card>
   <Card title="Prompt Tester" href="/features/prompt-tester">
-    Iterate on an optimized prompt in a dedicated chat.
+    Run an optimized prompt in a dedicated chat.
   </Card>
 </CardGroup>

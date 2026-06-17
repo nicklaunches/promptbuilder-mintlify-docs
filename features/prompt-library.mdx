@@ -1,22 +1,36 @@
 ---
 title: "Prompt Library"
-description: "Organize, reuse, and manage your saved prompts"
+description: "Organize, filter, and reuse your saved prompts"
 ---
 
-Prompt Library is where you store, organize, and reuse prompts you’ve created across Prompt Builder.
+Prompt Library is where you store, organize, and reuse the prompts you create across Prompt Builder.
 
-It includes two tabs:
+It has two tabs:
 
-- **My Prompts**: your saved prompts (from Generator / Tester / Optimizer / SMM Bot)
-- **Community Prompts**: curated prompts shared by others (optional; can be copied into My Prompts)
+- **My Prompts** — your saved prompts (from Generator, Optimizer, or Tester)
+- **Community Prompts** — prompts shared by others, which you can copy into My Prompts
 
 ## Find prompts fast
 
-Use search and filters to narrow down results:
+Use search and three filters to narrow the list:
 
-- Search by title, description, or prompt text
-- Filter by categories (multi-select)
-- Filter by target models (multi-select)
+- **Search** — by title, description, or prompt text
+- **Categories** — by prompt type: Standard, Research, Writing, Planning, Agent, Code
+- **Tags** — your own free-form labels (the list is built from tags already in use)
+- **Models** — by target model (Universal, ChatGPT, Claude, Gemini, and more)
+
+Filters combine, and a **Clear filters** action appears when any are active.
+
+## How prompts are organized
+
+Every saved prompt carries metadata so it's easy to find later:
+
+- **Category** — the prompt type
+- **Tags** — free-form labels you choose
+- **Models** — the target model(s) it's written for
+- Plus title, description, and the prompt text
+
+When you **Edit** a prompt you can update all of these — title, description, prompt text, category, tags, and models. Pinned prompts always sort to the top.
 
 ## My Prompts
 
@@ -27,22 +41,25 @@ My Prompts is your personal prompt workspace.
     Pin your best prompts so they stay at the top of the list.
   </Accordion>
   <Accordion title="Edit">
-    Update the title and prompt content when you improve a template.
+    Update the title, prompt, description, category, tags, and models.
   </Accordion>
   <Accordion title="Delete">
-    Remove prompts you no longer need (recommended: confirm before deleting).
+    Remove prompts you no longer need.
   </Accordion>
   <Accordion title="Run">
     Start a **new** Tester chat seeded with the prompt.
+  </Accordion>
+  <Accordion title="Import">
+    Bring in prompts in bulk from the **Import** action.
   </Accordion>
 </AccordionGroup>
 
 ## Community Prompts
 
-Browse prompts from the community and optionally **Add to Library** to copy them into My Prompts for customization.
+Browse prompts shared by the community and **Add to Library** to copy one into My Prompts, where you can adapt and re-save it.
 
 <Tip>
-  A great workflow is: add a community prompt → adapt it to your needs → save your edited version to My Prompts.
+  A great workflow: add a community prompt → adapt it to your needs → save your edited version (with your own tags and models) to My Prompts.
 </Tip>
 
 ## Recommended workflow
@@ -59,8 +76,8 @@ Browse prompts from the community and optionally **Add to Library** to copy them
     Iterate in Prompt Tester until the prompt reliably produces the result you want.
   </Step>
 
-  <Step title="Save + pin">
-    Save the final prompt to My Prompts and pin it if it’s a frequent workflow.
+  <Step title="Save, tag + pin">
+    Save the final prompt to My Prompts, add a category, tags, and models so it's easy to filter, and pin it if it's a frequent workflow.
   </Step>
 </Steps>
 
@@ -68,12 +85,15 @@ Browse prompts from the community and optionally **Add to Library** to copy them
 
 <CardGroup cols={2}>
   <Card title="Prompt Tester" href="/features/prompt-tester">
-    Use chat to refine prompts and save the best versions.
+    Run prompts and refine the best versions.
   </Card>
   <Card title="Prompt Generator" href="/features/prompt-generator">
     Start from an idea and iterate quickly.
   </Card>
   <Card title="Prompt Optimizer" href="/features/prompt-optimizer">
-    Upgrade an existing prompt and keep a version history.
+    Upgrade an existing prompt with a few quick questions.
+  </Card>
+  <Card title="Instructions" href="/features/instructions">
+    Set standing rules applied to every prompt.
   </Card>
 </CardGroup>

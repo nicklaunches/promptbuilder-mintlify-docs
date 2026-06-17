@@ -41,7 +41,8 @@
                             "features/prompt-generator",
                             "features/prompt-optimizer",
                             "features/prompt-library",
-                            "features/prompt-tester"
+                            "features/prompt-tester",
+                            "features/instructions"
                         ]
                     },
                     {

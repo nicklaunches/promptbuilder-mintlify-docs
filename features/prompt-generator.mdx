@@ -1,81 +1,118 @@
 ---
 title: "Prompt Generator"
-description: "Turn ideas into production-ready prompts"
+description: "Turn an idea into a production-ready prompt"
 ---
 
-Prompt Generator is a two-pane workspace:
+Prompt Generator turns a rough idea into a structured, production-ready prompt. Describe what you want in the composer, choose a **prompt type** and a **target model**, and click **Generate** — Prompt Builder opens a prompt view with the finished prompt and suggested next steps.
 
-- Left: describe your goal (“idea”) and choose a target model
-- Right: iterate in chat, then save the version you want to your Library
+## The composer
 
-## Core concepts
+Everything starts in a single composer:
 
-<AccordionGroup>
-  <Accordion title="Target model vs chat model">
-    - **Target model**: the model the prompt is optimized for (e.g. GPT, Claude, Gemini).
-    - **Chat model**: the assistant you use to iterate on the prompt inside the chat.
+- **Prompt type** — what kind of prompt you want (see below). Defaults to **Standard**.
+- **Model** — the AI model you'll run the prompt with. Defaults to **Universal**.
+- **Voice** — dictate your idea instead of typing (recording auto-stops after ~60 seconds).
+- **Attach** — add context files (images, documents, spreadsheets, code). Up to 10 files, 10 MB each.
+- **Instructions** — your standing rules, woven into every prompt. The badge shows how many are active. See [Instructions](/features/instructions).
+- **Generate** — build the prompt.
 
-    You can optimize for one model and iterate with another.
-  </Accordion>
-  <Accordion title="Chats">
-    Each time you generate, Prompt Builder creates a new chat thread so you can revisit iterations later.
-  </Accordion>
-  <Accordion title="Library">
-    Use **Save** to store the exact version you want in **My Prompts**, so you can reuse it later (and run it in Tester).
-  </Accordion>
-</AccordionGroup>
+<Tip>
+  Not sure where to start? Use **Prompt suggestions** below the composer. Browse by category (Recommended, General, Marketing, Writing, Coding, Research, Productivity, Business, Creative) and click a card to drop it into the composer.
+</Tip>
+
+## Choose a prompt type
+
+The prompt type shapes how Prompt Builder structures the result. Leave it on **Auto** to let Prompt Builder pick for you.
+
+| Type | Best for |
+| --- | --- |
+| **Auto** | We pick for you |
+| **Standard** | Good for everyday asks |
+| **Research** | Dig into a topic |
+| **Writing** | Posts, emails, copy |
+| **Planning** | Think it through |
+| **Agent** | Assistants and personas |
+| **Image** | Describe a still |
+| **Video** | Describe a scene |
+| **Code** | Write or fix code |
+| **Automation** | Make, n8n, Zapier flows |
+
+<Note>
+  **Image** and **Video** are visual prompt types, so they limit the model list to models that support that modality (for example Gemini or Universal). Prompt Builder switches the model automatically if your current pick can't handle it.
+</Note>
+
+## Pick a target model
+
+Choose the model you plan to run the prompt with. **Universal** works everywhere; pick a specific model to tailor the wording to its strengths.
+
+| Model | Strength |
+| --- | --- |
+| **Universal** | Works well across any model |
+| **ChatGPT** | Versatile all-rounder for most tasks |
+| **Claude** | Long documents and careful writing |
+| **Gemini** | Multimodal and tight Google integration |
+| **Llama** | Open-weight and self-hosting friendly |
+| **Mistral** | Fast, lightweight, and efficient |
+| **DeepSeek** | Strong reasoning and coding |
+| **Perplexity** | Web search with cited answers |
+| **Grok** | Real-time, X-aware responses |
+| **Cohere** | Retrieval and enterprise search |
 
 ## Generate a prompt
 
 <Steps>
   <Step title="Describe the outcome">
-    Write what you want to accomplish. Include:
+    Write what you want to accomplish. The more you include, the better the result:
     - Audience / role
     - Context / constraints
     - Desired output format
 
     <Tip>
-      If you know the output format, state it explicitly: “Return JSON with keys …” or “Return a table with columns …”.
+      If you know the output format, state it explicitly: "Return JSON with keys …" or "Return a table with columns …".
     </Tip>
   </Step>
 
-  <Step title="Choose a target model">
-    Pick the model you want the prompt optimized for.
+  <Step title="Set prompt type and model">
+    Pick a **prompt type** (or leave it on Auto) and the **target model** you'll run the prompt with.
   </Step>
 
   <Step title="Click Generate">
-    Prompt Builder creates a new chat thread and posts the first prompt version into the chat.
+    Prompt Builder builds the prompt and opens it in the prompt view, ready to copy, refine, or save to your [Library](/features/prompt-library).
   </Step>
 </Steps>
 
-## Refine in chat
+## After you generate — what's next?
 
-Use the chat on the right to iterate quickly. Good refinement prompts include:
+Once a prompt is ready, the prompt view offers quick next steps:
 
-- “Make it shorter and more direct”
-- “Add step-by-step instructions and acceptance criteria”
-- “Ask clarifying questions before answering”
-- “Add 3 examples and 3 edge cases”
-- “Rewrite for a different tone: friendly, formal, terse”
+<CardGroup cols={2}>
+  <Card title="Create follow up prompt">
+    Spin up a related prompt seeded from this one — great for building a chain of connected prompts.
+  </Card>
+  <Card title="Improve your prompt">
+    Answer a few quick questions and Prompt Builder sharpens the prompt for you.
+  </Card>
+</CardGroup>
 
-<Note>
-  When you like a version, click **Save** to add it to your Library.
-</Note>
+You can also keep refining in chat, copy the prompt, or **Save** it to your Library. **Build an agent** (turn a prompt into a reusable agent) is coming soon.
 
 ## Reuse saved prompts
 
-You can insert an existing prompt from **My Prompts** into the composer and keep iterating (no need to start from a fresh idea).
+You can insert an existing prompt from your **Library** into the composer and keep iterating — no need to start from a fresh idea every time.
 
 ## Next steps
 
 <CardGroup cols={2}>
   <Card title="Prompt Optimizer" href="/features/prompt-optimizer">
-    Improve an existing prompt and keep a history of versions.
+    Improve an existing prompt with a few quick questions.
   </Card>
   <Card title="Prompt Library" href="/features/prompt-library">
-    Organize saved prompts and run them in Tester.
+    Organize saved prompts by type, tags, and model.
+  </Card>
+  <Card title="Instructions" href="/features/instructions">
+    Set standing rules that apply to every prompt.
   </Card>
   <Card title="Prompt Tester" href="/features/prompt-tester">
-    Chat-first help for drafting, adapting, and refining prompts.
+    Run and refine prompts in a dedicated chat.
   </Card>
 </CardGroup>

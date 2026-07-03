@@ -41,6 +41,7 @@
                             "features/prompt-generator",
                             "features/prompt-optimizer",
                             "features/prompt-library",
+                            "features/team-workspaces",
                             "features/prompt-tester",
                             "features/instructions"
                         ]

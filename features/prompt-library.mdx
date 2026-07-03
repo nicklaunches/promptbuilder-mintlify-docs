@@ -18,8 +18,9 @@ Use search and three filters to narrow the list:
 - **Categories** — by prompt type: Standard, Research, Writing, Planning, Agent, Code
 - **Tags** — your own free-form labels (the list is built from tags already in use)
 - **Models** — by target model (Universal, ChatGPT, Claude, Gemini, and more)
+- **Sort** — Pinned first, Recently updated, Recently added, or Name (A–Z)
 
-Filters combine, and a **Clear filters** action appears when any are active.
+Filters combine, each shows as a removable chip, and a **Clear filters** action appears when any are active. Your search, filters, and folder are saved in the URL, so a view is easy to bookmark or share.
 
 ## How prompts are organized
 
@@ -32,6 +33,31 @@ Every saved prompt carries metadata so it's easy to find later:
 
 When you **Edit** a prompt you can update all of these — title, description, prompt text, category, tags, and models. Pinned prompts always sort to the top.
 
+## Organize with folders
+
+Group your prompts into folders so you can jump straight to what you need instead of scrolling one long list. A folder rail sits alongside My Prompts.
+
+- **All prompts / Unfiled / your folders** — the rail shows each with a live count.
+- **Select a folder** to filter the list to just those prompts (the selection is saved in the URL).
+- **Move to folder** — file a prompt from its actions menu, or select several and move them in bulk.
+- **Safe by design** — deleting a folder never deletes your prompts; they move to **Unfiled**.
+
+<AccordionGroup>
+  <Accordion title="Create a folder">
+    Use the **+** in the folder rail, give it a name, and it appears in the list.
+  </Accordion>
+  <Accordion title="Rename or delete">
+    Hover a folder for its rename and delete actions. Deleting keeps the prompts (they become Unfiled).
+  </Accordion>
+  <Accordion title="Move prompts in">
+    **Move to folder** on a card files a single prompt; in selection mode you can move many at once.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Folders belong to the active **workspace**. In a shared Team workspace, folders and prompts are shared with everyone — see [Team Workspaces](/features/team-workspaces).
+</Note>
+
 ## My Prompts
 
 My Prompts is your personal prompt workspace.
@@ -43,6 +69,12 @@ My Prompts is your personal prompt workspace.
   <Accordion title="Edit">
     Update the title, prompt, description, category, tags, and models.
   </Accordion>
+  <Accordion title="Copy">
+    Copy the prompt text to your clipboard in one click.
+  </Accordion>
+  <Accordion title="Move to folder">
+    File a prompt into a folder — or move many at once in selection mode.
+  </Accordion>
   <Accordion title="Delete">
     Remove prompts you no longer need.
   </Accordion>
@@ -51,6 +83,9 @@ My Prompts is your personal prompt workspace.
   </Accordion>
   <Accordion title="Import">
     Bring in prompts in bulk from the **Import** action.
+  </Accordion>
+  <Accordion title="Select (bulk)">
+    Enter selection mode to **Export selected** or **Move to folder** for many prompts at once.
   </Accordion>
 </AccordionGroup>
 
@@ -84,14 +119,14 @@ Browse prompts shared by the community and **Add to Library** to copy one into M
 ## Next steps
 
 <CardGroup cols={2}>
+  <Card title="Team Workspaces" href="/features/team-workspaces">
+    Share a library and folders with your team.
+  </Card>
   <Card title="Prompt Tester" href="/features/prompt-tester">
     Run prompts and refine the best versions.
   </Card>
   <Card title="Prompt Generator" href="/features/prompt-generator">
     Start from an idea and iterate quickly.
-  </Card>
-  <Card title="Prompt Optimizer" href="/features/prompt-optimizer">
-    Upgrade an existing prompt with a few quick questions.
   </Card>
   <Card title="Instructions" href="/features/instructions">
     Set standing rules applied to every prompt.

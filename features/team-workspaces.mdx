@@ -12,6 +12,21 @@ Workspaces keep a **shared prompt library** — with folders and members — sep
 
 Switch between them with the **workspace switcher** at the top of the sidebar. The active workspace drives your [Prompt Library](/features/prompt-library) — switching reloads My Prompts and folders for that workspace.
 
+## Credits in a team workspace
+
+Inside a team workspace, everyone uses the **owner's plan**. Members don't need a paid plan of their own: every prompt they generate, refine, optimize or test there comes out of the owner's credits.
+
+- **In the team workspace**, the sidebar meter shows **Team credits**: the owner's plan, shared by everyone in the workspace.
+- **In your personal workspace**, you use your own plan, as before.
+- **If the owner's plan ends**, members go back to using their own plan. Nobody gets locked out.
+- **The Chrome extension** always uses your own plan, since it has no workspace switcher.
+
+The owner's credits are one pool. Their own use, in any workspace, and their members' use in every team workspace they own all count toward the same monthly total.
+
+<Note>
+  When the team runs out of credits, only the owner can upgrade. Members see a prompt to ask the owner, or to switch back to their personal workspace.
+</Note>
+
 ## Roles
 
 Every member has one of three roles:
@@ -25,6 +40,7 @@ Every member has one of three roles:
 | Create / edit prompts and folders | ✓ | ✓ | ✓ |
 | Invite, remove, change member roles | ✓ | ✓ | — |
 | Rename workspace | ✓ | ✓ | — |
+| See credits used per member | ✓ | ✓ | — |
 | Delete workspace, manage billing | ✓ | — | — |
 
 <Note>
@@ -45,8 +61,11 @@ Open **Team members** from the sidebar account menu (or **Manage members** in th
   <Accordion title="Change a role or remove">
     Admins can switch a member between Member and Admin, or remove them. Anyone can leave a workspace themselves.
   </Accordion>
-  <Accordion title="Seats">
-    A seat counter shows how many of your workspace's seats are in use — members plus pending invites both count.
+  <Accordion title="Credits used per member">
+    Owners and admins see a **Credits used this period** column in the Members table: what each person used from the owner's plan in this workspace since the plan last reset. Removing someone stops their use right away.
+  </Accordion>
+  <Accordion title="Member limit">
+    A team workspace holds up to 10 people. Members and pending invites both count. This is a limit on team size, not paid seats: members don't need their own plan.
   </Accordion>
   <Accordion title="Rename or delete">
     Rename the workspace (admins and owner), or delete it (owner only). Deleting removes the shared library, folders, members, and invites.
